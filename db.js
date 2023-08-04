@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 async function connectDB() {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/Ecommerce', {
+    await mongoose.connect('mongodb+srv://kaviyaraja0906:6Bk19zR0EGltq7R4@e-com.6ixovnz.mongodb.net/E-commerce', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
